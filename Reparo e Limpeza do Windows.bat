@@ -10,7 +10,7 @@ echo ==========================================
 echo.
 echo Executando SFC...
 sfc /scannow
-echo SFC concluído!
+echo SFC concluido!
 echo.
 
 :: 2. Verificando imagem do Windows com DISM
@@ -18,26 +18,27 @@ echo Executando DISM...
 DISM /Online /Cleanup-Image /CheckHealth
 DISM /Online /Cleanup-Image /ScanHealth
 DISM /Online /Cleanup-Image /RestoreHealth
-echo DISM concluído!
+echo DISM concluido!
 echo.
 
-:: 3. Limpando arquivos temporários
-echo Limpando arquivos temporários...
+:: 3. Limpando arquivos temporarios
+echo Limpando arquivos temporarios...
 del /s /q %temp%\*
 del /s /q C:\Windows\Temp\*
-echo Limpeza de arquivos temporários concluída!
+echo Limpeza de arquivos temporarios concluida!
 echo.
 
-:: 4. Reiniciando serviços críticos
-echo Reiniciando serviços críticos...
+:: 4. Reiniciando servicos criticos
+echo Reiniciando servicos criticos...
 net stop wuauserv
 net start wuauserv
 net stop bits
 net start bits
-echo Serviços reiniciados!
+echo Servicos reiniciados!
 echo.
 
-echo Reparos concluídos!
+echo Reparos concluidos!
 echo ==========================================
 
 pause
+
