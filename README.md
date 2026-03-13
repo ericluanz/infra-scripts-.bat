@@ -2,7 +2,7 @@
 Scripts e automações para gerenciamento de suporte no meu dia a dia.
 
 ## 📂 Estrutura
-- `windows/` → Scripts para ambiente Windows (PowerShell, .bat)
+- `windows/` → Scripts para ambiente Windows (.bat)
   
 ## 🔧 Exemplos
 - Adicionar/remover máquinas do domínio (`windows/domain/`)
